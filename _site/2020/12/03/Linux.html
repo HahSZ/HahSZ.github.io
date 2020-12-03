@@ -1,0 +1,67 @@
+<p>@<a href="Linux使用新手入门大纲">TOC</a></p>
+
+<p>layout: post
+title:  “Linux使用新手入门大纲”
+date:</p>
+
+<h1 id="linux操作系统与不同发行版本的特点和来源">Linux操作系统与不同发行版本的特点和来源</h1>
+
+<p><img src="https://img-blog.csdnimg.cn/20201130200929715.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDczODM5Ng==,size_16,color_FFFFFF,t_70#pic_center" alt="Linux知名版本" /></p>
+
+<h1 id="路径通配符以及磁盘管理系统">路径、通配符以及磁盘管理系统</h1>
+<p>绝对路径：由根目录 / 写起的，例如 /usr/local/mysql
+相对路径：不是由根目录 / 写起的</p>
+
+<p><img src="https://img-blog.csdnimg.cn/20201130201153834.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDczODM5Ng==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述" /></p>
+
+<h1 id="linux基本命令的使用">Linux基本命令的使用</h1>
+<p>目录操作</p>
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">cd</span> <span class="nx">切换工作目录</span>
+<span class="nx">mkdir</span> <span class="nx">创建目录</span>
+<span class="nx">rmdir</span> <span class="nx">删除空目录</span>
+<span class="nx">rm</span> <span class="o">-</span><span class="nx">rf</span> <span class="nx">递归强制删除目录</span>
+<span class="nx">pwd</span><span class="err">：</span><span class="nx">打印当前工作目录</span>
+<span class="nx">ls</span> <span class="err">：</span><span class="nx">显示当前目录下内容</span>
+</code></pre></div></div>
+<p>文件操作</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">cat</span> <span class="nx">读取文件内容</span>
+<span class="nx">touch</span> <span class="nx">文件创建</span>
+<span class="nx">rm</span> <span class="nx">删除文件</span>
+<span class="nx">ln</span> <span class="o">-</span><span class="nx">s</span> <span class="nx">创建文件软链接</span>
+<span class="nx">ln</span> <span class="nx">创建文件硬链接</span>
+<span class="nx">cp</span> <span class="nx">复制文件</span><span class="o">/</span><span class="nx">目录</span>
+<span class="nx">mv</span> <span class="nx">移动文件</span><span class="o">/</span><span class="nx">目录</span>
+</code></pre></div></div>
+<p>用户权限相关操作</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">su</span> <span class="nx">root</span> <span class="nx">获取管理员权限</span>
+<span class="nx">sudo</span> <span class="nx">useradd</span>  <span class="nx">创建新用户</span>
+<span class="nx">sudo</span> <span class="nx">userdel</span>  <span class="nx">删除用户</span>
+<span class="nx">su</span> <span class="nx">切换用户</span><span class="err">（</span><span class="k">switch</span> <span class="nx">user</span><span class="err">）</span>
+</code></pre></div></div>
+
+<p>用户组相关操作</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">groupadd</span> <span class="nx">增加用户组</span>
+<span class="nx">useradd</span> <span class="o">-</span><span class="nx">g</span> <span class="nx">创建新用户放入用户组里</span>
+<span class="nx">usermod</span> <span class="o">-</span><span class="nx">g</span> <span class="nx">修改现有用户到用户组里</span>
+</code></pre></div></div>
+<p>目录及文件权限相关操作</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">chmod</span>
+</code></pre></div></div>
+
+<h1 id="linux服务">Linux服务</h1>
+
+<ul>
+  <li>SSH</li>
+  <li>FTP</li>
+  <li>HTTP</li>
+  <li>Apache</li>
+  <li>MYSQL</li>
+  <li>Samba</li>
+  <li>Bind</li>
+  <li>iSCSI</li>
+</ul>
+
